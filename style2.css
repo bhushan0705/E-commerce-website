@@ -1,0 +1,548 @@
+*{
+    font-family: 'lato',sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.navbar{
+    background-color: #333;
+    height: 90px;
+}
+.navtop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 55px;
+}
+.nav-header{
+    margin-left: 40px;
+}
+.offer{
+    margin-right: 40px;
+    cursor: pointer;
+}
+.search-bar{
+    padding: 6px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+}
+.search-bar i{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.searchInput{
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+}
+.searchInput::placeholder{
+    color: lightgrey;
+}
+.navbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuItems{
+    margin-right: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+}   
+.slider{
+    background: url("/img/nordwood-themes-9a58YsGiTPk-unsplash.jpg");
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 85%);
+    overflow: hidden;
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+.buyButton{
+    padding: 0px;
+    height: 42px;
+    z-index: 1;
+}
+.slideBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+}
+.sliderImg{
+    z-index: 1;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.sliderPrice{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    border: 2px solid green;
+    padding: 2px 8px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.buyButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size:20px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    border: 2px solid green;
+    padding: 2px 8px;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: transparent;
+    cursor: pointer;
+}
+.buyButton:hover{
+    background-color: red;
+}
+.sliderItem:nth-child(1) .slideBg{
+    background-color: green;
+}
+.sliderItem:nth-child(2) .slideBg{
+    background-color: black;
+}
+.sliderItem:nth-child(3) .slideBg{
+    background-color: green;
+}
+.sliderItem:nth-child(4) .slideBg{
+    background-color: green;
+}
+.sliderItem:nth-child(5) .slideBg{
+    background-color: #8B0A1A;
+}
+/* shipping content */
+.features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.feature i{
+    font-size: 50px;
+    color: green;
+}
+.feature-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+}
+.feature-Desc{
+    text-align: center;
+    color: grey;
+}
+/*-----2nd photo starts as a product here */
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+.productImg{
+    width: 43%;
+    margin-left: 100px;
+}
+.productDetails{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    padding: 50px;
+    width: 40%;
+}
+.productTitle,
+.productPrice,
+.productDesc{
+    margin-bottom: 10px;
+}
+.productTitle{
+    font-size: 70px;
+    font-weight: 900;
+}
+.productPrice{
+    font-size: 40px;
+}
+.productDesc{
+    font-size: 20px;
+    color: grey;
+}
+.colors,
+.sizes{
+    display: flex;
+    margin-bottom: 10px;
+}
+.color{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:last-child{
+    background-color: blue;
+}
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.productButton{
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+}
+.productButton:hover{
+    background-color: white;
+    color: black;
+}
+/* payment siuuuu---------- */
+.payment{
+    width: 500px;
+    height: 600px;
+    display: none;
+    flex-direction: column;
+    /* just remove this display: none  your display is going to be visible on screen */
+
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    padding: 25px;
+    margin: auto;
+    box-shadow: 20px 20px 15px 2px black;
+    border: 2px solid pink;
+}
+.payTitle{
+    font-size: 30px;
+    color: grey;
+}
+label{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.payInput{
+    padding:18px 0px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.payInput::placeholder{
+    color: red;
+    padding: 5px;
+}
+.cardIcons{
+    display: flex;
+}
+.cardIcons{
+    margin-right: 10px;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payInput_sm{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.payButton{
+    /* position: absolute; */
+    padding: 13px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 14px;
+    right: 19px;
+    font-size: 23px;
+    color: grey;
+}
+.close:hover{
+    cursor: pointer;
+}
+/* --------footer-------- */
+footer{
+    height: 40vh;
+}
+.footer-left{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerTitle{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom:10px ;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 6px;
+    margin-left: 16px;
+}
+.fListItem{
+    cursor: pointer;
+
+}
+.fListItem:hover{
+    color: grey;
+}
+/* -------contact page--------- */
+.contact{
+    height: 600px;
+    margin-top: 100px;
+    background-color: rgb(213 213 225);;
+    position: relative;
+}
+.contactTitle{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.ContElement{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cont-input{
+    padding: 20px;
+    border: none;
+    border-radius: 3px;
+    margin: 10px auto;
+    text-decoration: none;
+}
+.ContactItem label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.textarea-input {
+    padding-top: 1rem;
+    height: 200px;
+    border:none;
+    background-color:white;
+}
+.message{
+    color: red;
+}
+.cont-btn{
+    padding: 16px 38px;
+    position: absolute;
+    right: 60%;
+    bottom: 21px;
+    border-radius: 5px;
+    border: none;
+    background: #59d259;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+
+}
+.cont-btn:hover{
+    background-color: rgb(0, 255, 0);
+    color: grey;
+}
+/* ------social media--------- */
+.SocialMedia {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    padding: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+}
+.links a:hover {
+    color: #333;
+}
+.icon:hover{
+    color: red;
+    cursor: pointer;
+    transform: scale(2);
+}
+.icon{
+    font-size: 17px;
+    transition: all 0.3s ease-in-out ;
+}
+.copyright{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(166, 166, 252);
+}
+.copyright p{
+    position: relative;
+    margin-left: 85%;
+}
+
+/* -------media query------- */
+/* making the website to be responsive */
+/* I made it mostly for the iphone 14 proMax */
+
+@media screen and (max-width:430px) {
+    .navbar{
+        padding: 15px;
+        height: 100%;
+    }
+    .search-bar{
+        display: none;
+    }
+    .navbuttons{
+        flex-wrap: wrap;
+    }
+    .menuItems{
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .sliderImg{
+        width: 70%;
+        margin-left: 0px;
+    }
+    .slider{
+        clip-path:none;
+    }
+    .slideBg{
+        width: 60%;
+        height: 80%;
+    }
+    .sliderPrice{
+        left: 7px;
+        font-size: 30px;
+        top: 80%;
+
+    }
+    .buyButton{
+        font-size: 14px;
+        top: 80%;
+        right: 2%;
+    }
+    .sliderTitle{
+        font-size: 20px;
+    }
+    .features{
+        padding: 7px;
+    }
+    .feature i{
+        font-size: 40px;
+        margin-top: 17px;
+    }
+    .feature-Desc{
+        margin-bottom: 13px;
+    }
+    .productImg{
+        margin: 65% 0px 0px 51px;
+    }
+    .productTitle{
+        position: absolute;
+        top: -25%;
+        right: 35%;
+    }
+    .productPrice{
+        position: relative;
+        top: 366px;
+        right: 198px;
+    }
+    .colors{
+        position: relative;
+        top: 96px;
+        left: -73px;
+}
+.sizes{
+    position: relative;
+        top: 105px;
+        left: -73px;
+}
+.productButton{
+    position: relative;
+        top: 119px;
+        left: -73px;
+}
+.payment{
+    width: 400px;
+    margin-left: -28%;
+    height: 600px;
+}
+.footerTitle{
+    font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 22px;
+}
+.contact{
+    height: 600px;
+}
+.copyright p{
+    position: relative;
+    margin-left: 70%;
+}
+};
